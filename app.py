@@ -10,5 +10,5 @@ def index():
 
 @app.route('/hello/')
 @app.route('/hello/<name>')
-def hello("Marcin"):
+def hello(name='Marcin'):
     return render_template('hello.html', name=name)
